@@ -1,5 +1,5 @@
 ### Setup
-* Fork, Clone, yarn install, yarn start
+* Fork, Clone, npm install, npm start
 
 
 ### Use local api
