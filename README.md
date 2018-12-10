@@ -1,6 +1,9 @@
 ### Setup
 * Fork, Clone, npm install, npm start
 
+### Intro
+* The interface for this project should look familiar. It is using the same code as the express practice. We now to alter the client code to use redux thunk instead of fetch calls directly in the components. 
+
 
 ### Use local api
 * http://localhost:4001/products
