@@ -5,12 +5,17 @@ import ProductsContainer from "./containers/ProductsContainer";
 import VehiclesContainer from "./containers/VehiclesContainer";
 import CommentsContainer from "./containers/CommentsContainer";
 import CreateThingsContainer from "./containers/CreateThingsContainer";
+// import {loadProducts} from "./actions";
+// import { connect } from 'react-redux';
+
 class App extends Component {
   constructor() {
     super();
     this.state = {users: []};
   }
   componentDidMount() {
+    this.props.loadProducts();
+    this.props.loadComments();
 
   }
   render() {
@@ -33,6 +38,6 @@ class App extends Component {
     );
   }
 }
-export default (App);
 
+export default App;
 
