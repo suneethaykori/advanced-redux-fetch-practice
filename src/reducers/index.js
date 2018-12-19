@@ -15,10 +15,16 @@ function products(state = [], action) {
 }
 
 function contacts(state = [], action) {
+  if(action.type === "CONTACTS_LOADED"){
+    return action.value;
+  }
   return state;
 }
 
 function vehicles(state = [], action) {
+  if(action.type === "VEHICLES_LOADED"){
+    return action.value;
+  }
   return state;
 }
 

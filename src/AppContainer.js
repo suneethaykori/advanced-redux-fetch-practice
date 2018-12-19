@@ -9,18 +9,24 @@ import {loadContacts} from "./actions";
 
 
 
-function mapDispatchToProps(dispatch) {
-  return {
-
-  };
-}
+// function mapDispatchToProps(dispatch) {
+//     return{
+//       loadProducts:function(){
+//                     var action = loadProducts();
+//                     dispatch(action);
+//       }
+//       loadComments:()=>dispatch(loadComments()),
+//       loadVehicles:()=>dispatch(loadVehicles()),
+//       loadContacts:()=>dispatch(loadContacts())
+//     };
+// }
 
 export default connect (null, (d) => {
   return{
-    loadProducts:()=>d(loadProducts),
-    loadComments:()=>d(loadComments),
-    loadVehicles:()=>d(loadVehicles),
-    loadContacts:()=>d(loadContacts)
+    loadProducts:()=>d(loadProducts()),
+    loadComments:()=>d(loadComments()),
+    loadVehicles:()=>d(loadVehicles()),
+    loadContacts:()=>d(loadContacts())
   }
 })(App);
 
